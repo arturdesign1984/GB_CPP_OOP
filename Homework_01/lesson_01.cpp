@@ -59,10 +59,7 @@ private:
 public:
     Stack() : count(0)
     {
-        for(int k = 0; k < 10; k++)
-        {
-            arr[k] = 0;
-        }
+        reset();
     }
     void reset()
     {
@@ -114,6 +111,8 @@ public:
             std::cout << ')' << std::endl;
         }
     }
+    ~Stack()
+    {}
 };
 
 int main()

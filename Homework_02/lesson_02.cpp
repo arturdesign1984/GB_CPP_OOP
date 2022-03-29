@@ -190,11 +190,7 @@ int main()
 
     std::cout << std::endl;
 
-    // 03  /////////////////////////////
-    std::cout << "######\n# 03 #\n######\n\nClass Stack:\n\n";
-
-
-
+ 
     return 0;
 }
 

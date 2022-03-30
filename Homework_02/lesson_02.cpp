@@ -78,6 +78,10 @@ public:
     {
         std::cout << "Nomber of students: " << studentsCount << std::endl;
     }
+    ~Student()
+    {
+        studentsCount--;
+    }
 };
 uint16_t Student::studentsCount = 0;
 // 02 //////////////////////////////

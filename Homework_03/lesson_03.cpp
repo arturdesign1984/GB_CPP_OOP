@@ -169,12 +169,12 @@ public:
         {
             this->divider = divider;
         }
-        if(this->divisible < 0 && this->divider < 0)    // Если числитель и знаменатель отрицательные делаем положительную дробь
+        if(this->divisible < 0 && this->divider < 0)    // Р•СЃР»Рё С‡РёСЃР»РёС‚РµР»СЊ Рё Р·РЅР°РјРµРЅР°С‚РµР»СЊ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹Рµ РґРµР»Р°РµРј РїРѕР»РѕР¶РёС‚РµР»СЊРЅСѓСЋ РґСЂРѕР±СЊ
         {
             this->divisible = -this->divisible;
             this->divider = -this->divider;
         }
-        else if(this->divider < 0)                      // Если только знаменатель отрицательный делаем отрицательным числитель, а знаменатель положительным для простоты расчетов
+        else if(this->divider < 0)                      // Р•СЃР»Рё С‚РѕР»СЊРєРѕ Р·РЅР°РјРµРЅР°С‚РµР»СЊ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹Р№ РґРµР»Р°РµРј РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹Рј С‡РёСЃР»РёС‚РµР»СЊ, Р° Р·РЅР°РјРµРЅР°С‚РµР»СЊ РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹Рј РґР»СЏ РїСЂРѕСЃС‚РѕС‚С‹ СЂР°СЃС‡РµС‚РѕРІ
         {
             this->divisible = -this->divisible;
             this->divider = -this->divider;
@@ -322,10 +322,10 @@ std::ostream& operator<<(std::ostream& os, const Card& c)
     {
         switch (c.GetValue())
         {
-            case 1: return os << "Card is: " << '(' << 'A' << c.GetSuit() << ')'; break;
-            case 11: return os << "Card is: " << '(' << 'J' << c.GetSuit() << ')'; break;
-            case 12: return os << "Card is: " << '(' << 'Q' << c.GetSuit() << ')'; break;
-            case 13: return os << "Card is: " << '(' << 'K' << c.GetSuit() << ')'; break;
+            case ACE: return os << "Card is: " << '(' << 'A' << c.GetSuit() << ')'; break;
+            case JACK: return os << "Card is: " << '(' << 'J' << c.GetSuit() << ')'; break;
+            case QUEEN: return os << "Card is: " << '(' << 'Q' << c.GetSuit() << ')'; break;
+            case KING: return os << "Card is: " << '(' << 'K' << c.GetSuit() << ')'; break;
             default : return os << "Card is: " << '(' << c.GetValue() << c.GetSuit() << ')';
         }
 

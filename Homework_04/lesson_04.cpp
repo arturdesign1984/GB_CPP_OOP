@@ -322,6 +322,11 @@ int main()
 
     std::cout << std::endl;
 
+    delete c1;
+    delete c2;
+    delete c3;
+
+    c1 = c2 = c3 = nullptr;
 
     return 0;
 }

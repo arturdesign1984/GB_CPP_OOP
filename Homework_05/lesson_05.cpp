@@ -219,7 +219,7 @@ int main()
     std::cout << std::endl;
 
 // 03  /////////////////////////////
-    std::cout << "######\n# 02 #\n######\n\nClass StringValuePair:\n\n";
+    std::cout << "######\n# 03 #\n######\n\nClass StringValuePair:\n\n";
 
     StringValuePair<int> svp("Amazing", 7);
     std::cout << "Pair: " << svp.first() << ' ' << svp.second() << '\n';
@@ -227,7 +227,7 @@ int main()
     std::cout << std::endl;
 
 // 04  /////////////////////////////
-    std::cout << "######\n# 03 #\n######\n\nClass GenericPlayer:\n\n";
+    std::cout << "######\n# 04 #\n######\n\nClass GenericPlayer:\n\n";
 
     std::cout << "Description above the function MAIN" << std::endl;
 

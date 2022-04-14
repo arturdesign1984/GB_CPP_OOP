@@ -127,6 +127,7 @@ public:
     void Clear()
     {
         cardsOnHand.clear();
+        cardsOnHand.shrink_to_fit();
     }
     std::vector<Card*> GetCards() const
     {

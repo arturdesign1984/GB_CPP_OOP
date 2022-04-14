@@ -12,7 +12,7 @@ bool isNomber(std::string str)
     }
     for(size_t k = 0; k < strlen; ++k)
     {
-        if((str[k] < '0' || str[k] > '9') && str[k] != '-')
+        if(!isdigit(str[k]) && str[k] != '-')
         {
             return 0;
         }
@@ -53,6 +53,7 @@ int enterIntNumber()
 std::ostream& endll(std::ostream& os)
 {
     os << "\n\n";
+    os.flush();
     return os;
 }
 

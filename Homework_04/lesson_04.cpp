@@ -236,6 +236,7 @@ public:
     void Clear()
     {
         cardsOnHand.clear();
+        cardsOnHand.shrink_to_fit();
     }
     uint16_t GetValue()
     {
